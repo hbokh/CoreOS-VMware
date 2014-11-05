@@ -36,7 +36,8 @@ Powering on VM:
 Reset VM:
 ```
 
-After this, power down the VM and add the ISO-image. Restart the VM.
+After this, power down the VM and add the ISO-image. Restart the VM.  
+You can login with your Github-ID and its SSH-keys.
 
 I choose `coreos04` in the scripts, because I already had 3 CoreOS-hosts running as 'vmware_insecure' images. But number 04 seems to be cooperating with the rest: 
 
