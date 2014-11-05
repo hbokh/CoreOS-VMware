@@ -18,7 +18,6 @@ VM_NAME=CoreOS04
 # Then SCP coreos_production_vmware_image.vmdk to ${DATASTORE_PATH}/${VM_NAME}
 
 # Creates CoreOS VM Directory by hand
-mkdir -p ${DATASTORE_PATH}/templates
 #mkdir -p ${DATASTORE_PATH}/${VM_NAME}
 cd ${DATASTORE_PATH}/${VM_NAME}
 
