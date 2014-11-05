@@ -51,12 +51,12 @@ MACHINE		IP		    METADATA
 ```
 
 **Note**: The $private_ipv4 and $public_ipv4 substitution variables referenced in other documents are not supported on VMware. See this [link](https://coreos.com/docs/running-coreos/platforms/vmware/).  
-So you'll need a different and unique ISO for every separate CoreOS guest on VMware...
+So you'll need a different and unique ISO for every separate CoreOS guest on VMware.
 
 
 ## Issues
 
-- No bunzip2 on VMware ESXi... Yuo'll have to deflate the .vmdk on a different system and SCP it over.
+- No bunzip2 on VMware ESXi. You'll have to deflate the .vmdk on a different system and SCP it over.
 
 ## Thanks
 
