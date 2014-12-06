@@ -12,7 +12,7 @@ In short: **you won't be able to login if you don't attach a custom ISO to the V
 ## What
   
 Latest releases of CoreOS' VMware-images now include open-vm-tools.  
-This is a small project to use these instead of the 'vmware_insecure' images, and be prepared for the future.
+This is a small project to use these instead of the 'vmware\_insecure' images, and be prepared for the future.
 Check out this [GitHub-comment](https://github.com/coreos/coreos-overlay/issues/499#issuecomment-58461747):  *This only applies to the vmware image, the older vmware\_insecure image will eventually be killed off.*  
 
 **Killed off** ... time to get started!
@@ -22,8 +22,8 @@ Check out this [GitHub-comment](https://github.com/coreos/coreos-overlay/issues/
 
 You need 2 files from CoreOS, e.g. at http://alpha.release.core-os.net/amd64-usr/current/
 
-- coreos_production_vmware.vmx
-- coreos_production_vmware_image.vmdk.bz2
+- coreos\_production\_vmware.vmx
+- coreos\_production\_vmware\_image.vmdk.bz2
 
 See `deploy_coreos04_on_esxi.sh` for some details:
 
@@ -33,7 +33,7 @@ See `deploy_coreos04_on_esxi.sh` for some details:
 - a DHCP-reservation for a fixed IP-address is preferred
 
 To enable a user (login-account), etcd and fleet add an ISO-image to the VM, as a config-drive with the label `config-2`.  
-Edit file `user_data_04` for settings and file `04_make_ISO.sh` to create the ISO-image from these settings. My ISO-images are 96K in size.
+Edit file `user_data_04` for specific settings (change IP-address, GitHub-name) and file `04_make_ISO.sh` to create the ISO-image from these settings. My ISO-images are 96K in size.
 
 **Hint**: if you need `mkisofs` on OS X, install 'dvdrtools' with Homebrew: `brew install dvdrtools`.  
 
